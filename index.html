@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Dancing+Script&family=Meow+Script&family=Roboto+Slab:wght@700&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>Pearl-Inoxis Kft.</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="Logo.png" alt="Logo" title="Logo" id="logo">
+        <nav id="menu">
+            <div><a href="#menu_item1" class="menu_item">Menüpont 1</a></div>
+            <div><a href="#menu_item2" class="menu_item">Menüpont 2</a></div>
+            <div><a href="#menu_item3" class="menu_item">Menüpont 3</a></div>
+            <div><a href="#menu_item4" class="menu_item">Menüpont 4</a></div>
+        </nav>
+    </header>
+    <br>
+    <div class="content" id="menu_item1">
+        <h1>Menüpont1</h1>
+    </div>
+    <br>
+    <div class="content" id="menu_item2">
+        <h1>Menüpont2</h1>
+    </div>
+    <br>
+    <div class="content" id="menu_item3">
+        <h1>Menüpont3</h1>
+    </div>
+    <br>
+    <div class="content" id="menu_item4">
+        <h1>Menüpont4</h1>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("nav a").on('click',function(){
+            var link = $(this).attr('href');
+            $('html,body').animate({scrollTop: ($(link).offset().top - 118)},'slow');
+            return false;
+        });
+    });
+</script>
+
+</html>
