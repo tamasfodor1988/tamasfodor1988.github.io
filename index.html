@@ -38,7 +38,8 @@
         <h1>Menüpont4</h1>
     </div>
 </body>
-<script>
+<script> 
+    //Menu scrolling animation
     $(document).ready(function(){
         $("nav a").on('click',function(){
             var link = $(this).attr('href');
@@ -47,6 +48,7 @@
         });
     });
 
+    //Menu hiding script
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
