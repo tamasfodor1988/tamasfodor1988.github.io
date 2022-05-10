@@ -8,7 +8,7 @@ body{
     background-image: url(background.jpg);
 }
 
-.header{
+#header{
     top: 0;
     position: fixed;
     z-index: 1;
