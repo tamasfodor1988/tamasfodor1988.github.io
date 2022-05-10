@@ -17,6 +17,7 @@ body{
     justify-content: space-evenly;
     background-color: rgb(193,184,175,0.3);
     /* border: solid 2px black; */
+    transition: top 0.3s;
 }
 
 #logo{
