@@ -6,6 +6,8 @@
 
 body{
     background-image: url(background.jpg);
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
 }
 
 #header{
@@ -19,6 +21,7 @@ body{
     background-color: rgb(193,184,175,0.3);
     /* border: solid 2px black; */
     transition: top 0.3s; /*Menu hiding animation (duration)*/
+    box-shadow: 0 5px 20px black;
 }
 
 #logo{
@@ -33,7 +36,6 @@ body{
 }
 
 #menu a{
-    font-family: 'Roboto Slab', serif;
     text-decoration: none;
     color: #22a1c4;
     transition: color 1s;
@@ -50,4 +52,18 @@ body{
     display: block;
     background-color: rgb(193,184,175,0.5);
     height: 500px;
+}
+
+h1{
+    padding-top: 25px;
+    color: #1a7791;
+    text-align: center;
+}
+
+.carousel-item{
+    
+}
+
+#carouselExampleIndicators{
+    width: 1000px;
 }
